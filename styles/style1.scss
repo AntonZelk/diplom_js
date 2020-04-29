@@ -1,0 +1,68 @@
+$color_bar: #ff4040; 
+.container3{
+    .center{
+        .cards{
+            .card{
+                .cont1{
+                    &:hover{
+                        background-color: $color_bar;
+                    }
+                }
+             }
+         }
+     }
+}
+@mixin Monser {
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+header{
+    .menu{
+        ul{
+            li{
+                a{
+                    @include Monser;
+                }
+            }
+        }
+    }
+}
+
+.container1 .center .content p{
+    @include Monser;
+}
+.container2 .window .string p{
+    @include Monser;
+}
+.container2 .window .btn a{
+    @include Monser;
+}
+@mixin Back{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 360px;
+}
+@for $i from 1 through 3 {
+    .container1{
+        .con#{$i}{
+            @include Back;
+        }
+    }
+  }
+
+$padd: 68%;
+@function left($n) {
+    @return $n - $padd;
+  }
+  header .menu {margin-left: left(100);}
+  
+
+  
+  
+ 
+                
+  
+  
+  
+
+  

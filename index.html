@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Open+Sans|Poppins:600|Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/owl.theme.default.css">
+    <link rel="stylesheet" href="./styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/all.css">
+    <link rel="stylesheet" href="./styles/style1.css">
+    <title>Diplom</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a class="mainPage" href="#header">Главная</a></li>
+                    <li><a id="userBtn" href="#">Вход</a></li>
+                    <li><a class="aboutPage" href="#advantages">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div id="userForm" class="user">
+                <form id="user_form" action="#">
+                  <input id="form_name" type="text" placeholder="Имя">
+                  <input id="form_email" type="email" placeholder="@mail">
+                  <input id="form_password" type="password" placeholder="Пороль">
+                  <input id="form_submit" type="submit">
+                  <input id="form_reset" type="reset">
+                </form>
+              </div>
+            <div class="corz" id="corz">
+                <img src="./images/corzina.png">
+                <div class="wrapCorz">
+                   <p class="p1">Корзина</p>
+                   <p class="p2 catalog_counter"></p>
+                </div>
+            </div>
+            <div class="logo-search">
+                <div class="logo">
+                    <img src="./images/logo_fireworks.svg" alt="Image1">
+                    <div class="logoText">
+                        <p>САЛЮТЫ.by</p>
+                        <p class="p1">Все для праздника</p>
+                    </div>
+               </div>
+               <div class="search">
+                <div id="searching">
+                    <input type="text" placeholder="Поиск">
+                    <input type="image" alt="search" src="./images/search.png">
+                </div>
+               </div>
+            </div>
+            <div class="catalogMenu">
+                <ul>
+                    <li><a id="fire" class="fireCat" href="#catalogFire">ФЕЕРВЕРКИ</a></li>
+                    <li><a class="font" href="#catalogFont">ФОНТАНЫ</a></li>
+                    <li><a class="smoke" href="#catalogSmoke">ЦВЕТНОЙ ДЫМ</a></li>
+                    <li><a class="piu" href="#catalogPiu">ПЕТАРДЫ</a></li>
+                </ul>
+            </div>
+           <div class="burger" id="burger">
+            <div class="hamburger-menu"></div>	
+           </div>
+
+       </header>
+        <section class="container1 raz slide3 owl-carousel owl-theme dva" id="container1">
+            <div class="con1">
+                <div class="center">
+                    <div class="content">
+                        <span class="txt">Выбери для себя</p>
+                        <h1>ТВОЙ ПРАЗДНИК</h1>
+                    </div>
+                </div>  
+            </div>  
+            <div class="con2"> 
+                <div class="center">
+                    <div class="content">
+                        <span class="txt">Все для тебя</p>
+                        <h1>ЛЮБЫЕ ЖЕЛАНИЯ</h1>
+                    </div>
+                </div>  
+            </div>  
+            <div  class="con3">
+                <div class="center">
+                    <div class="content">
+                        <span class="txt">Устрой себе выходной</p>
+                        <h1>ВМЕСТЕ С НАМИ</h1>
+                    </div>
+                </div>  
+            </div>  
+        </section> 
+        <div id="userСabinet">
+            <div><h3 class="cab">Личный кабинет</h3></div>
+            <div><h3 id="name"></h3></div>
+            <div id="close"><div id="closeBtnUser">Выход</div></div>
+            <div id="lastOder"> История заказов</div>
+          </div>
+        <section class="Act" id="act">
+            <h2>Акционные товары</h2>
+            <p> До конца нашего предложения осталось: 
+                <span id="timer"></span>
+            </p>
+        </section>
+        <section class="main_content">
+            <div class="sidebar">
+                <div class="sideTitle">КАТАЛОГ ТОВАРОВ</div>
+                <ul class="sideMenu">
+                        <li><a id="fire" class="fireCat" href="#catalogFire">ФЕЕРВЕРКИ</a></li>
+                        <li><a id="font" class="font" href="#catalogFont">ФОНТАНЫ</a></li>
+                        <li><a id="smoke" class="smoke" href="#catalogSmoke">ЦВЕТНОЙ ДЫМ</a></li>
+                        <li><a id="piu" class="piu" href="#catalogPiu">ПЕТАРДЫ</a></li>
+                </ul>
+            </div>
+            <div class="container_products" id="sale">
+            </div>
+            <div class="container_about" id="aboutProduct">
+            </div>
+            <div class="container_cart" id="containerCart">
+            </div> 
+            <div class="container_products_Own" id="catalogFire">
+            </div>
+            <div class="container_products_Font" id="catalogFont">
+            </div>
+            <div class="container_products_Smoke" id="catalogSmoke">
+            </div>
+            <div class="container_products_Piu" id="catalogPiu">
+            </div>
+        </section> 
+        <div class="advantages" id="advantages">
+            <div class="advantages-container __container">
+                 <span class="h2">Почему выбирают нас</span>
+                 <div class="advantages__items">
+                     <div class="advantage__item">
+                          <noscript>
+                              <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>В пиротехнической сфере работаем уже много лет</p>
+                        </div>
+                        <div class="advantage__item">
+                             <noscript>
+                                 <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Реализуем сертифицированные фейерверки, салюты и прочие пиротехнические изделия</p>
+                         </div>
+                        <div class="advantage__item"> 
+                             <noscript>
+                                <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" ls-is-cached lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Сотрудничаем  только с надежными партнерами</p></div><div class="advantage__item">
+                            <noscript>
+                                <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" ls-is-cached lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Устанавливаем разумные цены</p>
+                        </div>
+                        <div class="advantage__item"> 
+                            <noscript>
+                                 <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" ls-is-cached lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Предлагаем огромный ассортимент пиротехники – лучшей в своем классе</p>
+                        </div>
+                        <div class="advantage__item"> 
+                            <noscript>
+                                <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" ls-is-cached lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Консультируем и помогаем сделать грамотный выбор</p>
+                        </div>
+                        <div class="advantage__item"> 
+                             <noscript>
+                                <img src="./images/star.png" alt="Звездочка">
+                            </noscript>
+                            <img class=" ls-is-cached lazyloaded" src="./images/star.png" data-src="./images/star.png" alt="Звездочка">
+                            <p>Регулярно проводим акции, распродажи, делаем скидки</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+        <section class="footer" id="contacts">
+            <div class="logo">
+                <img src="./images/logo_fireworks.svg" alt="Image1">
+                <div class="logoText">
+                    <p>САЛЮТЫ.by</p>
+                    <p class="p1">Все для праздника</p>
+                </div>
+           </div>
+           <div class="catalog">
+               <p>КАТАЛОГ</p>
+               <ul>
+                <li><a id="fire" class="fireCat" href="#catalogFire">ФЕЕРВЕРКИ</a></li>
+                <li><a class="font" href="#catalogFont">ФОНТАНЫ</a></li>
+                <li><a class="smoke" href="#catalogSmoke">ЦВЕТНОЙ ДЫМ</a></li>
+                <li><a class="piu" href="#catalogPiu">ПЕТАРДЫ</a></li>
+               </ul>
+           </div>
+           <div class="shop">
+            <p>ИНТЕРНЕТ МАГАЗИН</p>
+            <ul>
+             <li><a class="mainPage" href="#header">Главная</a></li>
+             <li><a href="#">Вход</a></li>
+             <li><a class="aboutPage" href="#advantages">О нас</a></li>
+             <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <p>КОНТАКТЫ</p>
+            <ul>
+             <li>+37529-181-25-07</li>
+             <li>zelkdar@gmail.com</li>
+            </ul>
+        </div>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A994706a9ce6151a00ac96fee78745297d9d4bedcfeeaf75cb48df10fa20501b5&amp;width=300&amp;height=200&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        </section>
+    </div>
+<script src="./js/all.js"></script>  
+<script src="./js/jquery.min.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="./js/catalogStorage.js"></script>
+<script src="./js/createOneProduct.js"></script>
+<script src="./js/store.js"></script>
+<script src="./js/catalog.js"></script>
+<script src="./js/cart.js"></script>
+<script src="./js/enter.js"></script>
+<script>
+     $(document).ready(function(){
+    $(".slide3").owlCarousel({loop:true,
+        loop:true,
+        items:3,
+        margin:10,
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+    });
+    });
+</script>
+</body>
+</html>
